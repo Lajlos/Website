@@ -1,0 +1,378 @@
+body, html {
+    font-size: 15px;
+	background: url('szare.png');
+	font-family: Verdana;
+	margin: 0 !important;
+	height:100%;
+}
+
+#logo
+{	
+	color: white;
+	text-align: center;
+	padding-top: 140px;
+	padding-bottom:40px;
+	font-size: 64px;
+	letter-spacing: 3px;
+	font-weight: 900;	
+	background: url('beer.jpg');
+	width:100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+.layout {	
+	min-height:60%;
+    display: grid;
+    grid-template-columns: auto 16em;
+    grid-template-rows:  auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    max-width: 1000px;
+    margin: 10px auto;
+	
+}
+
+.layout div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navd, .navc{
+	padding: 5px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0;
+	background: rgba(50,50,50, 0.95);
+	border-radius: 0px 0px 20px 20px;
+}
+
+.nav{
+	padding: 10px 0 5px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0;
+background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+}
+
+
+
+
+.nav li{
+    padding-left : 0em;
+    list-style: none;
+    display: inline-block;
+		margin: 0 8px;
+}
+.navd li, .navc li{
+    padding-left : 1em;
+}
+.nav a,  .navd a, .navc a{
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    color: rgba(255,255,255,.7);
+    text-decoration: none;
+}
+
+.nav a:hover,  .navd a:hover, .navc a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+
+
+
+
+
+#content {
+    grid-row: 1;
+    grid-column: 1;
+	background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    padding: 30px;
+	text-align: justify;
+	
+}
+
+.sidebarR {
+    grid-row: 1;
+    grid-column: 2;
+	background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    padding: 20px ;
+	
+}
+.sidebarR  div{
+	   padding-left: 2px;
+    padding-right: 2px;
+}
+
+
+.footer {
+    text-align: center;
+	padding:5px;
+background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    vertical-align: super;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+    font-weight: 300;
+    line-height: 200%;
+}
+
+
+
+.bigtitle
+{
+	font-size: 24px;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+
+
+/*ULUBIONE*/
+.navc{
+	padding: 5px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0;
+	
+}
+
+.navc li{
+    padding-left : 1em;
+}
+ .navc a{
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+}
+
+ .navc a:hover {
+  color: gray;
+  border-bottom: 1px solid #fff;
+}
+
+.navc ul a   
+{
+	color: black;
+	list-style-type: none;
+
+}
+.navc ul    
+{
+	line-height: 250%; 
+	 text-align: left;
+	color: black;
+	list-style-type: none;
+
+}
+
+
+
+ol
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 16px;
+	height: 100%;
+	display: inline-block;
+	line-height: 200%;
+}
+
+ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+ol > li
+{
+	float: left;
+	width: 175px;
+	height: 40px;
+}
+
+ol > li .navd
+{
+	text-align: left;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display: none;
+	font-size: 14px;
+}
+
+ol > li:hover .navd
+{
+	display: block;
+	overflow-y: scroll; 
+	overflow-x: hidden; 
+	width: 15em; 
+	height: 30em; 
+}
+
+.navd ul > li
+{
+	margin-left:0px;
+	padding:0px;
+	position: relative;
+	z-index: 100;
+	width:140px;
+	text-align:left;
+}
+
+.navd ul > li:hover > a
+{
+	color: #fff;
+}
+ol > li:hover .navd::-webkit-scrollbar { 
+    display: none; 
+}
+
+/*LOGOWANIE*/
+
+.home_content{
+	    grid-row: 1;
+    grid-column: 1/ span 2;
+	
+}
+
+
+
+.header {
+	width: 50%;
+	margin: 20px auto 0px;
+	color: white;
+background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+	text-align: center;
+	border: 1px solid gray;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px;
+}
+form {
+	width: 50%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #B0C4DE;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+	margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+}
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+.btn {
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+	border: none;
+	border-radius: 5px;
+}
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+.success {
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+.post{
+ 
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.post:last-child{
+    border: 0;
+}
+
+.post h1{
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.post-text{
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: serif;
+    color: gray;
+    text-align: justify;
+}
+.post-action{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.like,.unlike{
+    border: 0;
+    background: none;
+    letter-spacing: 1px;
+    color: lightseagreen;
+}
+
+.like,.unlike:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+		/* SLIDER*/
+
+.slides{
+	position:relative;
+}
+.slides  img{
+		height:200px;
+	width:200px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index:-1;
+}
+
+.slides  img.top{
+	z-index:1;
+}
